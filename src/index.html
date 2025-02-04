@@ -12,48 +12,69 @@
     <title>SDP</title>
 </head>
 <body>
- <header class="header">
-    <div class="header__topMain">
-        <div class="container header__containerTop flex">
-            <a href="tel:+74958854547" class="header__tel flex">+7 (495) 885-45-47</a>
-            <nav>
-                <ul class="flex header__list">
-                    <li><a href="#" class="header__navLink">О компании</a></li>
-                    <li><a href="#" class="header__navLink">Гарантия и возврат</a></li>
-                    <li><a href="#" class="header__navLink">Корпоративным клиентам</a></li>
-                    <li><a href="#" class="header__navLink">Дизайн-решение</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div class="container header__containerBottom flex">
-        <div>
-            <a href="#" >
-                <picture><img class="header__logo" src="img/logo.png" alt="Логотип"></picture>
-            </a>
-            <nav>
-                <ul class="header__bottomList flex">
-                    <li><a href="#" class="header__navLinkBottom">Каталог</a></li>
-                    <li><a href="#" class="header__navLinkBottom">Магазины</a></li>
-                    <li><a href="#" class="header__navLinkBottom">Шоу-рум</a></li>
-                    <li><a href="#" class="header__navLinkBottom">Доставка и оплата</a></li>
-                    <li><a href="#" class="header__navLinkBottom">Дисконт</a></li>
-                    <li><a href="#" class="header__navLinkBottom">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div>
-            <form action="https://jsonplaceholder.typicode.com/posts" method="post" role="search" class="header__form flex">
-                <input type="search" class="header__search flex" placeholder="Я хочу купить...">
-                <button class="header__btnSearch"></button>
-            </form>
-            <div class="flex header__btnBlock">
-                <button class="header__btn header__btn_acc"></button>
-                <button class="header__btn header__btn_basket"></button>
+    <header class="header">
+        <div class="header__topMain">
+            <div class="container header__containerTop flex">
+                <a href="tel:+74958854547" class="header__tel flex">+7 (495) 885-45-47</a>
+                <nav>
+                    <ul class="flex header__list">
+                        <li><a href="#" class="header__navLink">О компании</a></li>
+                        <li><a href="#" class="header__navLink">Гарантия и возврат</a></li>
+                        <li><a href="#" class="header__navLink">Корпоративным клиентам</a></li>
+                        <li><a href="#" class="header__navLink">Дизайн-решение</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </div>
- </header>
+        <div class="container header__containerBottom flex">
+            <div>
+                <a href="#" >
+                    <picture><img class="header__logo" src="img/logo.png" alt="Логотип"></picture>
+                </a>
+                <nav>
+                    <ul class="header__bottomList flex">
+                        <li><a href="#" class="header__navLinkBottom">Каталог</a></li>
+                        <li><a href="#" class="header__navLinkBottom">Магазины</a></li>
+                        <li><a href="#" class="header__navLinkBottom">Шоу-рум</a></li>
+                        <li><a href="#" class="header__navLinkBottom">Доставка и оплата</a></li>
+                        <li><a href="#" class="header__navLinkBottom">Дисконт</a></li>
+                        <li><a href="#" class="header__navLinkBottom">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <form action="https://jsonplaceholder.typicode.com/posts" method="post" role="search" class="header__form flex">
+                    <input type="search" class="header__search flex" placeholder="Я хочу купить...">
+                    <button class="header__btnSearch"></button>
+                </form>
+                <div class="flex header__btnBlock">
+                    <button class="header__btn header__btn_acc"></button>
+                    <button class="header__btn header__btn_basket">
+                        <span class="header__basketCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero__container flex">
+                <h1>Скидка 15% на первую покупку</h1>
+                <button>Получить!</button>
+            </div>
+        </section>
+        <section class="spec">
+            <div class="container spec__container">
+                <h2>Специальные предложения</h2>
+                <ul class="spec__list flex">
+                    <li class="spec__item spec__item_small"></li>
+                    <li class="spec__item spec__item_big"></li>
+                    <li class="spec__item spec__item_small"></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <header></header>
     <script src="js/main.min.js"></script>
 </body>
 </html>
