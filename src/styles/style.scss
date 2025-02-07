@@ -502,8 +502,9 @@
   }
 
   &__item {
+    padding: min(2.08vw, 30px);
     border-radius: min(.69vw, 10px);
-    background-color: red;
+    background-color: #f6f6f6;
 
     &_1 {
       grid-column: 1 / 3;
@@ -535,6 +536,64 @@
     grid-template-columns: min(28.13vw, 405px) min(12.99vw, 187px) min(12.99vw, 187px) min(28.13vw, 405px);
     grid-template-rows: min(35.49vw, 511px) min(28.13vw, 405px);
     gap: min(2.22vw, 32px);
+  }
+
+  &__listType {
+    margin-bottom: min(.97vw, 14px);
+
+    column-gap: min(2.08vw, 30px);
+  }
+
+  &__typeItem {
+    font-size: min(.97vw, 14px);
+    font-weight: 400;
+    line-height: min(.97vw, 14px);
+    color: #999999;
+  }
+
+  & h3 {
+    margin-bottom: min(2.08vw, 30px);
+    font-size: min(1.67vw, 24px);
+    font-weight: 400;
+    line-height: min(2.22vw, 32px);
+    color: #333333;
+  }
+
+  & div:has(> picture) {
+    width: min(35.76vw, 515px);
+    height: min(21.39vw, 308px);
+    margin-bottom: min(2.08vw, 30px);
+    margin-left: max(-2.08vw, -30px);
+
+    & img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__linkCatalog {
+    align-items: center;
+    width: max-content;
+    font-size: min(1.11vw, 16px);
+    font-weight: 700;
+    line-height: min(1.32vw, 19px);
+    color: #a65cf0;
+
+    column-gap: min(.35vw, 5px);
+  }
+
+  &__arrow {
+    width: min(1.53vw, 22px);
+    height: min(1.53vw, 22px);
+
+    stroke: #a65cf0;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
