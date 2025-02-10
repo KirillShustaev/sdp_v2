@@ -4,3 +4,21 @@ let headerSearch = document.querySelector(".header__search")
 headerSearch.addEventListener("input", ()=> {
     headerForm.classList.toggle("noneLoop")
 })
+
+let phoneInput = document.getElementById('phone');
+let phoneMask = IMask(phoneInput, {
+	mask: '+{7}(000)000-00-00'
+});
+
+const counterElement = document.querySelector('.header__basketCount');
+const incrementButtons = document.querySelectorAll('.likeBtn');
+
+let count = 0;
+
+incrementButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        count++;
+
+        counterElement.textContent = count;
+    });
+});
