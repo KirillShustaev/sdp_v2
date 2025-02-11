@@ -9,7 +9,7 @@ let phoneInput = document.getElementById('phone');
 let phoneMask = IMask(phoneInput, {
 	mask: '+{7}(000)000-00-00'
 });
-
+// счетчик
 const counterElement = document.querySelector('.header__basketCount');
 const incrementButtons = document.querySelectorAll('.likeBtn');
 
@@ -22,3 +22,4 @@ incrementButtons.forEach(button => {
         counterElement.textContent = count;
     });
 });
+//

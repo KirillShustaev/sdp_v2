@@ -25,6 +25,7 @@
     font-weight: 400;
     line-height: min(.97vw, 14px);
     color: #ff862f;
+    transition: color .3s ease-in-out;
 
     &::after {
       content: "";
@@ -48,6 +49,7 @@
     font-weight: 400;
     line-height: min(.97vw, 14px);
     color: #999999;
+    transition: color .3s ease-in-out;
   }
 
   &__logo {
@@ -83,6 +85,7 @@
     padding: min(1.39vw, 20px) min(2.22vw, 32px);
     border-radius: min(.69vw, 10px);
     background-color: #f6f6f6;
+    transition: background-color .3s ease-in-out;
 
     &::before {
       content: "";
@@ -125,6 +128,7 @@
     font-weight: 400;
     line-height: min(1.53vw, 22px);
     color: #333333;
+    transition: color .3s ease-in-out;
   }
 
   &__btnSearch {
@@ -148,6 +152,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    transition: background-image .3s ease-in-out;
 
     &_acc {
       background-image: url(../img/header__accIcon.svg);
@@ -212,6 +217,7 @@
     line-height: min(1.11vw, 16px);
     color: white;
     background-color: #a65cf0;
+    transition: background-color .3s ease-in-out;
   }
 }
 
@@ -347,6 +353,7 @@
     line-height: min(1.11vw, 16px);
     color: #a65cf0;
     background-color: transparent;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
   }
 }
 
@@ -445,6 +452,7 @@
     line-height: min(1.11vw, 16px);
     color: #a65cf0;
     background-color: transparent;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
   }
 }
 
@@ -487,6 +495,7 @@
     line-height: min(1.11vw, 16px);
     color: #ffffff;
     background-color: #a65cf0;
+    transition: background-color .3s ease-in-out;
   }
 }
 
@@ -605,6 +614,7 @@
     font-weight: 700;
     line-height: min(1.32vw, 19px);
     color: #a65cf0;
+    transition: color .3s ease-in-out;
 
     column-gap: min(.35vw, 5px);
   }
@@ -612,6 +622,7 @@
   &__arrow {
     width: min(1.53vw, 22px);
     height: min(1.53vw, 22px);
+    transition: stroke .3s ease-in-out;
 
     stroke: #a65cf0;
 
@@ -684,6 +695,7 @@
     line-height: min(1.11vw, 16px);
     color: #a65cf0;
     background-color: transparent;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
   }
 }
 
@@ -732,6 +744,7 @@
       line-height: min(2.78vw, 40px);
       color: #999999;
       background-color: #f6f6f6;
+      transition: background-color .3s ease-in-out;
 
       &::placeholder {
         font-size: min(1.11vw, 16px);
@@ -753,6 +766,7 @@
     line-height: min(1.11vw, 16px);
     color: white;
     background-color: #a65cf0;
+    transition: background-color .3s ease-in-out;
   }
 
   &__img {
@@ -849,11 +863,16 @@
 
   &__socBlock {
     column-gap: min(1.39vw, 20px);
+
     & svg {
       width: min(2.08vw, 30px);
       height: min(2.08vw, 30px);
 
       fill: #999999;
+    }
+
+    a svg {
+      transition: fill .3s ease-in-out;
     }
   }
 
@@ -901,6 +920,7 @@
       line-height: min(.97vw, 14px);
       color: #999999;
       letter-spacing: 0;
+      transition: color .3s ease-in-out;
     }
   }
 
@@ -912,4 +932,57 @@
 //
 .noneLoop::before {
   opacity: 0;
+}
+
+// hover
+
+@media (any-hover:hover) {
+  .header__navLinkBottom:hover,
+  .header__navLink:hover,
+  .footer__listBlockMain li a:hover {
+    color: #a65cf0;
+  }
+
+  .hero button:hover,
+  .oxford button:hover,
+  .connect__btn:hover {
+    background-color: #c998fb;
+  }
+
+  .spec__btn:hover,
+  .pop__btn:hover,
+  .useful__link:hover {
+    color: white;
+    background-color: #a65cf0;
+  }
+
+  .top__linkCatalog:hover {
+    color: #7033ac;
+    text-decoration: underline;
+  }
+
+  .top__linkCatalog:hover .top__arrow {
+    stroke: #7033ac;
+  }
+
+  .header__form:hover,
+  .connect div:has(> input[type]) > input:hover {
+    background-color: #eaeaea;
+  }
+
+  .header__btn_acc:hover {
+    background-image: url(../img/acc_hover.svg);
+  }
+
+  .header__btn_basket:hover {
+    background-image: url(../img/basket_hover.svg);
+  }
+
+  .footer__socBlock a:hover svg {
+    fill: #a65cf0;
+  }
+
+  .header__tel:hover {
+    color: #ffbd59;
+  }
 }
