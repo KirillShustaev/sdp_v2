@@ -15,6 +15,10 @@ const del = require("del")
 const path = {
     html: {
         src: "src/index.html",
+        dest: "dist/",
+    },
+    html2: {
+        src: "src/catalog.html",
         dest: "dist/"
     },
     styles: {
@@ -41,12 +45,20 @@ function clean() {
 
 function html() {
     return gulp.src(path.html.src)
-      .pipe(htmlmin({ 
-        collapseWhitespace: true 
+      .pipe(htmlmin({
+        collapseWhitespace: true
     }))
       .pipe(gulp.dest(path.html.dest));
 }
 
+
+function html2() {
+    return gulp.src(path.html2.src)
+      .pipe(htmlmin({
+        collapseWhitespace: true
+    }))
+      .pipe(gulp.dest(path.html2.dest));
+}
 function styles() {
     return gulp.src(path.styles.src)
         .pipe(sourcemaps.init())
@@ -93,16 +105,18 @@ function font() {
 
 function watch() {
     gulp.watch(path.html.src, html)
+    gulp.watch(path.html2.src, html2)
     gulp.watch(path.styles.src, styles)
     gulp.watch(path.scripts.src, scripts)
     gulp.watch(path.images.src, img)
     gulp.watch(path.fonts.src, font)
 }
 
-const build = gulp.series(clean, gulp.parallel(html, styles, scripts, img, font),  watch)
+const build = gulp.series(clean, gulp.parallel(html, html2, styles, scripts, img, font),  watch)
 
 
 exports.html = html
+exports.html2 = html2
 exports.clean = clean
 exports.img = img
 exports.styles = styles
