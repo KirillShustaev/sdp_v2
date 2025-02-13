@@ -1460,6 +1460,7 @@ body:has(.catalog) > .header {
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
+  height: calc(100% - min(14.58vw, 210px) - min(2.08vw, 30px));
 }
 .spec h3 {
   max-width: min(15.56vw, 224px);
@@ -1489,6 +1490,7 @@ body:has(.catalog) > .header {
        column-gap: min(2.08vw, 30px);
 }
 .spec__btn {
+  margin-top: auto;
   padding: min(1.32vw, 19px) min(2.43vw, 35px);
   border: 2px solid #a65cf0;
   border-radius: min(0.69vw, 10px);
@@ -1567,6 +1569,9 @@ body:has(.catalog) > .header {
      object-position: bottom;
 }
 .pop div:has(> h3) {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - min(11.6vw, 167px));
   padding-inline: min(2.08vw, 30px);
 }
 .pop__price {
@@ -1578,6 +1583,7 @@ body:has(.catalog) > .header {
   color: #666666;
 }
 .pop__btn {
+  margin-top: auto;
   padding: min(1.32vw, 19px) min(2.43vw, 35px);
   border: 2px solid #a65cf0;
   border-radius: min(0.69vw, 10px);

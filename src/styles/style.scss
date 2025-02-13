@@ -318,6 +318,7 @@ body:has(.catalog) > .header {
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
+    height: calc(100% - min(14.58vw, 210px) - min(2.08vw, 30px));
   }
 
   & h3 {
@@ -352,6 +353,7 @@ body:has(.catalog) > .header {
   }
 
   &__btn {
+    margin-top: auto;
     padding: min(1.32vw, 19px) min(2.43vw, 35px);
     border: 2px solid #a65cf0;
     border-radius: min(.69vw, 10px);
@@ -438,6 +440,10 @@ body:has(.catalog) > .header {
   }
 
   div:has(> h3) {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - min(11.60vw, 167px));
+
     padding-inline: min(2.08vw, 30px);
   }
 
@@ -451,6 +457,7 @@ body:has(.catalog) > .header {
   }
 
   &__btn {
+    margin-top: auto;
     padding: min(1.32vw, 19px) min(2.43vw, 35px);
     border: 2px solid #a65cf0;
     border-radius: min(.69vw, 10px);
