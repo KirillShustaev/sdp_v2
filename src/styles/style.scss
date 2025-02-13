@@ -2,6 +2,8 @@
 
 @import "settings";
 
+@import "library_swiper-bundle";
+
 .container {
   padding-inline: 2rem;
 }
@@ -935,6 +937,39 @@ body:has(.catalog) > .header {
 }
 
 .catalog {
+  &__swiper {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__productBlock {
+    position: relative;
+    width: 75%;
+  }
+
+  &__btnSwiperBlock {
+    position: absolute;
+    bottom: max(-4.44vw, -64px);
+    left: min(32.50vw, 468px);
+
+    column-gap: min(1.25vw, 18px);
+  }
+
+  &__btnSwiper {
+    align-items: center;
+    justify-content: center;
+    width: min(2.22vw, 32px);
+    height: min(2.22vw, 32px);
+    border: 2px solid #a65cf0;
+    border-radius: min(.69vw, 10px);
+    font-size: min(1.11vw, 16px);
+    font-weight: 600;
+    line-height: min(1.11vw, 16px);
+    color: #a65cf0;
+    letter-spacing: 0;
+    background-color: transparent;
+  }
+
   &__way {
     margin-bottom: min(2.22vw, 32px);
 
@@ -1023,14 +1058,12 @@ body:has(.catalog) > .header {
 
   &__mainBlock {
     justify-content: space-between;
-
-    column-gap: min(5.76vw, 83px);
+    margin-bottom: min(9.31vw, 134px);
 
     & > div {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-bottom: min(9.31vw, 134px);
     }
   }
 
@@ -1109,19 +1142,147 @@ body:has(.catalog) > .header {
   }
 
   &__item {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: min(29.17vw, 420px);
+    padding: min(2.08vw, 30px) min(1.04vw, 15px);
+    border-radius: min(.69vw, 10px);
     background-color: #f6f6f6;
   }
 
-  &__productBlock {
-    width: 75%;
+  &__star {
+    position: relative;
+    align-items: center;
+    margin-left: min(1.04vw, 15px);
+    padding-left: min(1.60vw, 23px);
+    font-size: min(1.11vw, 16px);
+    font-weight: 400;
+    line-height: min(1.46vw, 21px);
+    color: #ff862f;
+    letter-spacing: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: min(1.04vw, 15px);
+      height: min(1.04vw, 15px);
+      background-image: url(../img/catalog_star.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  &__itemTopBlock {
+    flex-direction: column;
+    justify-content: space-between;
+    height: min(11.18vw, 161px);
+    margin-bottom: min(1.11vw, 16px);
+  }
+
+  &__imgBlockItem {
+    &_1 {
+      width: min(18.47vw, 266px);
+      height: min(5.69vw, 82px);
+    }
+
+    &_2 {
+      width: min(18.13vw, 261px);
+      height: min(7.01vw, 101px);
+    }
+
+    &_3 {
+      width: min(18.13vw, 261px);
+      height: min(7.01vw, 101px);
+    }
+
+    &_4 {
+      width: min(17.85vw, 257px);
+      height: min(8.68vw, 125px);
+    }
+
+    &_5 {
+      width: min(18.47vw, 266px);
+      height: min(8.13vw, 117px);
+    }
+
+    &_6 {
+      width: min(18.82vw, 271px);
+      height: min(8.13vw, 117px);
+    }
+
+    &_7 {
+      width: min(18.47vw, 266px);
+      height: min(9.03vw, 130px);
+    }
+
+    &_8 {
+      width: min(14.72vw, 212px);
+      height: min(8.61vw, 124px);
+    }
+
+    &_9 {
+      width: min(18.19vw, 262px);
+      height: min(8.61vw, 124px);
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__itemTitle {
+    max-width: min(16.39vw, 236px);
+    margin-bottom: min(1.67vw, 24px);
+    font-size: min(1.67vw, 24px);
+    font-weight: 400;
+    line-height: min(2.15vw, 31px);
+    color: #333333;
+    letter-spacing: 0;
+  }
+
+  &__priceItem {
+    display: block;
+    margin-bottom: min(1.67vw, 24px);
+    font-size: min(1.11vw, 16px);
+    font-weight: 400;
+    line-height: min(1.46vw, 21px);
+    color: #666666;
+    letter-spacing: 0;
+  }
+
+  & div:has(> .catalog__itemTitle) {
+    margin-left: min(1.04vw, 15px);
+  }
+
+  &__btn {
+    max-width: min(4.03vw, 58px);
+    margin-top: auto;
+    padding: min(1.32vw, 19px) min(2.43vw, 35px);
+    border: 2px solid #a65cf0;
+    border-radius: min(.69vw, 10px);
+    font-size: min(1.11vw, 16px);
+    font-weight: 600;
+    line-height: min(1.11vw, 16px);
+    color: #a65cf0;
+    background-color: transparent;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
   }
 }
 
 //
 .noneLoop::before {
   opacity: 0;
+}
+
+.catalogBtnActive {
+  color: white;
+  background-color: #a65cf0;
 }
 
 // hover
@@ -1140,6 +1301,7 @@ body:has(.catalog) > .header {
   }
 
   .spec__btn:hover,
+  .catalog__btn:hover,
   .pop__btn:hover,
   .useful__link:hover {
     color: white;

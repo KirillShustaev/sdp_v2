@@ -28,7 +28,7 @@
         </div>
         <div class="container header__containerBottom flex">
             <div>
-                <a href="#" >
+                <a href="index.html" >
                     <picture><img class="header__logo" src="img/logo.png" alt="Логотип"></picture>
                 </a>
                 <nav>
@@ -62,7 +62,7 @@
         <section class="catalog">
             <div class="container catalog__container">
                 <div class="catalog__way">
-                    <a href="#">Главная</a>
+                    <a href="index.html">Главная</a>
                     <span>/</span>
                     <a href="#">Каталог</a>
                     <span>/</span>
@@ -79,22 +79,22 @@
                                     <h4 class="catalog__filterTitleCheck">Цвет</h4>
                                     <div class="catalog__wrapper flex">
                                         <label class="catalog__checkBlock checkBlock">
-                                            <input type="radio" class="checkBlock__check" name="color">
+                                            <input type="checkbox" class="checkBlock__check">
                                             <span class="checkBlock__checkVis flex" role="checkbox" aria-checked="true" aria-label="checkbox"></span>
                                             <span class="catalog__choiceName">Коричневый</span>
                                         </label>
                                         <label class="catalog__checkBlock checkBlock">
-                                            <input type="radio" class="checkBlock__check" name="color" checked>
+                                            <input type="checkbox" class="checkBlock__check" checked>
                                             <span class="checkBlock__checkVis flex" role="checkbox" aria-checked="true" aria-label="checkbox"></span>
                                             <span class="catalog__choiceName">Черный</span>
                                         </label>
                                         <label class="catalog__checkBlock checkBlock">
-                                            <input type="radio" class="checkBlock__check" name="color">
+                                            <input type="checkbox" class="checkBlock__check">
                                             <span class="checkBlock__checkVis flex" role="checkbox" aria-checked="true" aria-label="checkbox"></span>
                                             <span class="catalog__choiceName">Синий</span>
                                         </label>
                                         <label class="catalog__checkBlock checkBlock">
-                                            <input type="radio" class="checkBlock__check" name="color">
+                                            <input type="checkbox" class="checkBlock__check">
                                             <span class="checkBlock__checkVis flex" role="checkbox" aria-checked="true" aria-label="checkbox"></span>
                                             <span class="catalog__choiceName">Белый</span>
                                         </label>
@@ -104,12 +104,12 @@
                                     <h4 class="catalog__filterTitleCheck">Категория</h4>
                                     <div class="catalog__wrapper flex">
                                         <label class="catalog__checkBlock checkBlock">
-                                            <input type="radio" class="checkBlock__check" name="category">
+                                            <input type="checkbox" class="checkBlock__check">
                                             <span class="checkBlock__checkVis flex" role="checkbox" aria-checked="true" aria-label="checkbox"></span>
                                             <span class="catalog__choiceName">Диваны</span>
                                         </label>
                                         <label class="catalog__checkBlock checkBlock">
-                                            <input type="radio" class="checkBlock__check" name="category" checked>
+                                            <input type="checkbox" class="checkBlock__check" checked>
                                             <span class="checkBlock__checkVis flex" role="checkbox" aria-checked="true" aria-label="checkbox"></span>
                                             <span class="catalog__choiceName">Кресла</span>
                                         </label>
@@ -148,17 +148,485 @@
                     </div>
                     <div class="catalog__productBlock">
                         <h1>Каталог</h1>
-                        <ul class="catalog__list grid">
-                            <li class="catalog__item"></li>
-                            <li class="catalog__item"></li>
-                            <li class="catalog__item"></li>
-                            <li class="catalog__item"></li>
-                            <li class="catalog__item"></li>
-                            <li class="catalog__item"></li>
-                            <li class="catalog__item"></li>
-                            <li class="catalog__item"></li>
-                            <li class="catalog__item"></li>
-                        </ul>
+                        <div class="catalog__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <ul class="catalog__list grid">
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">5,0</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_1.png"
+                                                            srcset="
+                                                            img/catalog_product_1_2x.png 2x,
+                                                            img/catalog_product_1_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван кожаный “R-94”</h2>
+                                                    <span class="catalog__priceItem">94 990 руб</span>
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,9</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_2.png"
+                                                            srcset="
+                                                            img/catalog_product_2_2x.png 2x,
+                                                            img/catalog_product_2_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван апартековый “T-75”</h2>
+                                                    <span class="catalog__priceItem">69 990 руб</span>
+
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,8</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_3.png"
+                                                            srcset="
+                                                            img/catalog_product_3_2x.png 2x,
+                                                            img/catalog_product_3_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван тканевый “D-31”</h2>
+                                                    <span class="catalog__priceItem">28 490 руб</span>
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,8</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_4.png"
+                                                            srcset="
+                                                            img/catalog_product_4_2x.png 2x,
+                                                            img/catalog_product_4_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван велюровый “Y-68”</h2>
+                                                    <span class="catalog__priceItem">22 990 руб</span>
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,8</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_5.png"
+                                                            srcset="
+                                                            img/catalog_product_5_2x.png 2x,
+                                                            img/catalog_product_5_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван из шинила “W-95”</h2>
+                                                    <span class="catalog__priceItem">22 990 руб</span>
+
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,8</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_6.png"
+                                                            srcset="
+                                                            img/catalog_product_6_2x.png 2x,
+                                                            img/catalog_product_6_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван флоковый “G-41”</h2>
+                                                    <span class="catalog__priceItem">17 990 руб</span>
+
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,8</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_7.png"
+                                                            srcset="
+                                                            img/catalog_product_7_2x.png 2x,
+                                                            img/catalog_product_7_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван шиниловый “V-43”</h2>
+                                                    <span class="catalog__priceItem">19 990 руб</span>
+
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,7</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_8.png"
+                                                            srcset="
+                                                            img/catalog_product_8_2x.png 2x,
+                                                            img/catalog_product_8_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван велюровый “S-99”</h2>
+                                                    <span class="catalog__priceItem">19 990 руб</span>
+
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,7</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_9.png"
+                                                            srcset="
+                                                            img/catalog_product_9_2x.png 2x,
+                                                            img/catalog_product_9_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван из кожзама “F-85”</h2>
+                                                    <span class="catalog__priceItem">26 990 руб</span>
+
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul class="catalog__list grid">
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">5,0</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_1.png"
+                                                            srcset="
+                                                            img/catalog_product_1_2x.png 2x,
+                                                            img/catalog_product_1_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван кожаный “R-94”</h2>
+                                                    <span class="catalog__priceItem">94 990 руб</span>
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,9</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_2.png"
+                                                            srcset="
+                                                            img/catalog_product_2_2x.png 2x,
+                                                            img/catalog_product_2_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван апартековый “T-75”</h2>
+                                                    <span class="catalog__priceItem">69 990 руб</span>
+
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,8</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_3.png"
+                                                            srcset="
+                                                            img/catalog_product_3_2x.png 2x,
+                                                            img/catalog_product_3_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван тканевый “D-31”</h2>
+                                                    <span class="catalog__priceItem">28 490 руб</span>
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,8</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_4.png"
+                                                            srcset="
+                                                            img/catalog_product_4_2x.png 2x,
+                                                            img/catalog_product_4_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван велюровый “Y-68”</h2>
+                                                    <span class="catalog__priceItem">22 990 руб</span>
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,8</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_5.png"
+                                                            srcset="
+                                                            img/catalog_product_5_2x.png 2x,
+                                                            img/catalog_product_5_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван из шинила “W-95”</h2>
+                                                    <span class="catalog__priceItem">22 990 руб</span>
+
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,8</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_6.png"
+                                                            srcset="
+                                                            img/catalog_product_6_2x.png 2x,
+                                                            img/catalog_product_6_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван флоковый “G-41”</h2>
+                                                    <span class="catalog__priceItem">17 990 руб</span>
+
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,8</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_7.png"
+                                                            srcset="
+                                                            img/catalog_product_7_2x.png 2x,
+                                                            img/catalog_product_7_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван шиниловый “V-43”</h2>
+                                                    <span class="catalog__priceItem">19 990 руб</span>
+
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,7</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_8.png"
+                                                            srcset="
+                                                            img/catalog_product_8_2x.png 2x,
+                                                            img/catalog_product_8_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван велюровый “S-99”</h2>
+                                                    <span class="catalog__priceItem">19 990 руб</span>
+
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                        <li class="catalog__item">
+                                            <div>
+                                                <div class="catalog__itemTopBlock flex">
+                                                    <span class="catalog__star flex">4,7</span>
+                                                    <div class="catalog__imgBlockItem catalog__imgBlockItem_1">
+                                                        <picture>
+                                                            <img src="img/catalog_product_9.png"
+                                                            srcset="
+                                                            img/catalog_product_9_2x.png 2x,
+                                                            img/catalog_product_9_3x.png 3x,
+                                                            "
+
+                                                            alt="Фото товара" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 class="catalog__itemTitle">Диван из кожзама “F-85”</h2>
+                                                    <span class="catalog__priceItem">26 990 руб</span>
+
+                                                </div>
+                                            </div>
+                                            <button class="catalog__btn likeBtn">
+                                                Купить
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="catalog__btnSwiperBlock flex">
+                            <button class="catalog__btnSwiper catalog__btnSwiper_1 flex catalogBtnActive">1</button>
+                            <button class="catalog__btnSwiper catalog__btnSwiper_2 flex">2</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -167,7 +635,7 @@
     <footer class="footer">
         <div class="container footer__container flex">
             <div class="footer__logoBlock">
-                <a class="footer__logo" href="#">
+                <a class="footer__logo" href="index.html">
                     <picture>
                         <img src="img/logo.png" loading="lazy" alt="Логотип">
                     </picture>
