@@ -25,6 +25,10 @@ const path = {
         src: "src/card.html",
         dest: "dist/"
     },
+    html4: {
+        src: "src/cooperation.html",
+        dest: "dist/"
+    },
     styles: {
         src: "src/styles/**/*.scss",
         dest: "dist/css/"
@@ -71,6 +75,15 @@ function html3() {
     }))
       .pipe(gulp.dest(path.html3.dest));
 }
+
+function html4() {
+    return gulp.src(path.html4.src)
+      .pipe(htmlmin({
+        collapseWhitespace: true
+    }))
+      .pipe(gulp.dest(path.html4.dest));
+}
+
 
 function styles() {
     return gulp.src(path.styles.src)
@@ -120,18 +133,20 @@ function watch() {
     gulp.watch(path.html.src, html)
     gulp.watch(path.html2.src, html2)
     gulp.watch(path.html3.src, html3)
+    gulp.watch(path.html4.src, html4)
     gulp.watch(path.styles.src, styles)
     gulp.watch(path.scripts.src, scripts)
     gulp.watch(path.images.src, img)
     gulp.watch(path.fonts.src, font)
 }
 
-const build = gulp.series(clean, gulp.parallel(html, html2, html3, styles, scripts, img, font),  watch)
+const build = gulp.series(clean, gulp.parallel(html, html2, html3, html4, styles, scripts, img, font),  watch)
 
 
 exports.html = html
 exports.html2 = html2
 exports.html3 = html3
+exports.html4 = html4
 exports.clean = clean
 exports.img = img
 exports.styles = styles

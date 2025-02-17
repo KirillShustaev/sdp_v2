@@ -457,6 +457,7 @@ body:has(.catalog) > .header {
   }
 
   &__btn {
+    max-width: max-content;
     margin-top: auto;
     padding: min(1.32vw, 19px) min(2.43vw, 35px);
     border: 2px solid #a65cf0;
@@ -1418,10 +1419,13 @@ body:has(.catalog) > .header {
   }
 
   &__descrBlock {
-    max-width: min(43.33vw, 624px);
     margin-bottom: min(5.69vw, 82px);
 
     column-gap: min(2.22vw, 32px);
+
+    & > div {
+      max-width: min(43.33vw, 624px);
+    }
   }
 
   & h4 {
@@ -1437,7 +1441,7 @@ body:has(.catalog) > .header {
     display: flex;
     flex-direction: column;
 
-    row-gap: min(.56vw, 8px);
+    row-gap: min(.83vw, 12px);
   }
 
   & div:has(> dt) {
@@ -1474,6 +1478,163 @@ body:has(.catalog) > .header {
     font-weight: 400;
     color: #333333;
     letter-spacing: 0;
+  }
+}
+
+.coop {
+  &__container {
+    margin-bottom: min(4.86vw, 70px);
+
+    & * {
+      max-width: min(58.47vw, 842px);
+    }
+  }
+
+  &__way {
+    margin-bottom: min(2.22vw, 32px);
+
+    & a,
+    span {
+      font-size: min(.97vw, 14px);
+      font-weight: 400;
+      line-height: min(.97vw, 14px);
+      color: #999999;
+      letter-spacing: 0;
+    }
+
+    & a:last-child {
+      color: #7033ac;
+    }
+  }
+
+  & h1 {
+    margin-bottom: min(2.22vw, 32px);
+    font-size: min(2.22vw, 32px);
+    font-weight: 400;
+    line-height: min(2.22vw, 32px);
+    color: #333333;
+    letter-spacing: 0;
+
+    & ~ div {
+      margin-bottom: min(2.22vw, 32px);
+    }
+  }
+
+  & h2 {
+    margin-bottom: min(2.22vw, 32px);
+    font-size: min(1.67vw, 24px);
+    font-weight: 400;
+    line-height: min(2.22vw, 32px);
+    color: #333333;
+    letter-spacing: 0;
+  }
+
+  & p {
+    font-size: min(1.11vw, 16px);
+    font-weight: 400;
+    line-height: min(2.01vw, 29px);
+    color: #666666;
+    letter-spacing: 0;
+  }
+
+  & h3 {
+    margin-bottom: min(.83vw, 12px);
+    font-size: min(1.11vw, 16px);
+    font-weight: 600;
+    line-height: min(1.53vw, 22px);
+    color: #ff862f;
+    letter-spacing: 0;
+  }
+
+  &__possibility {
+    flex-direction: column;
+
+    row-gap: min(.83vw, 12px);
+  }
+
+  &__advantItem {
+    position: relative;
+    padding-left: min(2.57vw, 37px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: min(1.74vw, 25px);
+      height: min(1.74vw, 25px);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &:nth-child(1)::after {
+      background-image: url(../img/coop__advant_1.svg);
+    }
+
+    &:nth-child(2)::after {
+      background-image: url(../img/coop__advant_2.svg);
+    }
+
+    &:nth-child(3)::after {
+      background-image: url(../img/coop__advant_3.svg);
+    }
+  }
+
+  &__advantList {
+    flex-direction: column;
+
+    row-gap: min(.83vw, 12px);
+  }
+
+  &__garanty {
+    flex-direction: column;
+
+    row-gap: min(.83vw, 12px);
+
+    & li {
+      position: relative;
+      padding-left: min(1.81vw, 26px);
+      counter-increment: new 1;
+
+      &::after {
+        content: counter(new);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: min(1.11vw, 16px);
+        height: min(1.74vw, 25px);
+        font-size: min(1.11vw, 16px);
+        font-weight: 600;
+        line-height: min(2.01vw, 29px);
+        color: #ff862f;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  &__term {
+    align-items: center;
+
+    column-gap: min(2.22vw, 32px);
+
+    & p {
+      max-width: min(35.76vw, 515px);
+      font-size: min(1.67vw, 24px);
+      font-weight: 400;
+      line-height: min(2.50vw, 36px);
+      color: #333333;
+      letter-spacing: 0;
+    }
+
+    & span {
+      display: block;
+      width: min(5.35vw, 77px);
+      height: min(8.06vw, 116px);
+      background-image: url(../img/pencil.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 
