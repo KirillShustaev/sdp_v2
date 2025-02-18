@@ -396,7 +396,8 @@ h2,
 h3,
 h4,
 h5,
-p {
+p,
+dl {
   margin: 0;
   padding: 0;
 }
@@ -1184,7 +1185,11 @@ button.swiper-pagination-bullet {
 }
 
 body:has(.catalog) > .header {
-  margin-bottom: min(1.6vw, 23px);
+  margin-bottom: min(1.39vw, 20px);
+}
+
+body:has(.card) > .header {
+  margin-bottom: min(1.39vw, 20px);
 }
 
 .header {
@@ -1253,7 +1258,7 @@ body:has(.catalog) > .header {
   align-items: center;
   justify-content: space-between;
   width: min(73.68vw, 1061px);
-  padding: min(1.39vw, 20px) min(2.22vw, 32px);
+  padding: min(0.9vw, 13px) min(2.22vw, 32px);
   border-radius: min(0.69vw, 10px);
   background-color: #f6f6f6;
   transition: background-color 0.3s ease-in-out;
@@ -1485,7 +1490,7 @@ body:has(.catalog) > .header {
 }
 .spec__priceBlock {
   align-items: center;
-  margin-bottom: min(1.53vw, 22px);
+  margin-bottom: min(1.11vw, 16px);
   -moz-column-gap: min(2.08vw, 30px);
        column-gap: min(2.08vw, 30px);
 }
@@ -1516,10 +1521,10 @@ body:has(.catalog) > .header {
   grid-template-columns: repeat(4, 1fr);
   -moz-column-gap: min(2.22vw, 32px);
        column-gap: min(2.22vw, 32px);
-  row-gap: min(2.22vw, 32px);
+  row-gap: min(2.57vw, 37px);
 }
 .pop__item {
-  min-height: min(29.17vw, 420px);
+  min-height: min(28.75vw, 414px);
   border-radius: min(0.69vw, 10px);
   background-color: #f6f6f6;
   padding-block: min(2.08vw, 30px);
@@ -1558,7 +1563,7 @@ body:has(.catalog) > .header {
   justify-content: center;
   width: 100%;
   min-height: min(9.03vw, 130px);
-  margin-bottom: min(1.11vw, 16px);
+  margin-bottom: min(1.6vw, 23px);
 }
 .pop div:has(> picture) img {
   width: 100%;
@@ -1576,7 +1581,7 @@ body:has(.catalog) > .header {
 }
 .pop__price {
   display: block;
-  margin-bottom: min(1.67vw, 24px);
+  margin-bottom: min(0.97vw, 14px);
   font-size: min(1.11vw, 16px);
   font-weight: 400;
   line-height: min(1.46vw, 21px);
@@ -1885,7 +1890,7 @@ body:has(.catalog) > .header {
 .checkBlock {
   position: relative;
   align-items: center;
-  padding-left: min(1.53vw, 22px);
+  padding-left: min(2.08vw, 30px);
   cursor: pointer;
 }
 .checkBlock__check {
@@ -2026,7 +2031,7 @@ body:has(.catalog) > .header {
 .catalog__btnSwiperBlock {
   position: absolute;
   bottom: max(-4.44vw, -64px);
-  left: min(32.5vw, 468px);
+  left: min(30.9vw, 445px);
   -moz-column-gap: min(1.25vw, 18px);
        column-gap: min(1.25vw, 18px);
 }
@@ -2067,7 +2072,7 @@ body:has(.catalog) > .header {
   letter-spacing: 0;
 }
 .catalog__filterTitleCheck {
-  margin-bottom: min(0.56vw, 8px);
+  margin-bottom: min(0.76vw, 11px);
   font-size: min(1.11vw, 16px);
   font-weight: 600;
   line-height: min(1.39vw, 20px);
@@ -2077,7 +2082,7 @@ body:has(.catalog) > .header {
 .catalog__wrapper {
   align-items: flex-start;
   flex-direction: column;
-  row-gap: min(0.69vw, 10px);
+  row-gap: min(0.97vw, 14px);
 }
 .catalog__checkBlock {
   margin-bottom: 0 !important;
@@ -2194,13 +2199,14 @@ body:has(.catalog) > .header {
 }
 .catalog__list {
   grid-template-columns: repeat(3, 1fr);
-  gap: min(2.22vw, 32px);
+  gap: min(1.67vw, 24px);
 }
 .catalog__item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: min(29.17vw, 420px);
+  min-height: -moz-max-content;
+  min-height: max-content;
   padding: min(2.08vw, 30px) min(1.04vw, 15px);
   border-radius: min(0.69vw, 10px);
   background-color: #f6f6f6;
@@ -2232,6 +2238,9 @@ body:has(.catalog) > .header {
   justify-content: space-between;
   height: min(11.18vw, 161px);
   margin-bottom: min(1.11vw, 16px);
+}
+.catalog__imgBlockItem {
+  margin: 0 auto;
 }
 .catalog__imgBlockItem_1 {
   width: min(18.47vw, 266px);
@@ -2294,11 +2303,12 @@ body:has(.catalog) > .header {
   letter-spacing: 0;
 }
 .catalog div:has(> .catalog__itemTitle) {
-  margin-left: min(1.04vw, 15px);
+  margin-left: min(1.46vw, 21px);
 }
 .catalog__btn {
   max-width: min(4.03vw, 58px);
   margin-top: auto;
+  margin-left: min(1.39vw, 20px);
   padding: min(1.32vw, 19px) min(2.43vw, 35px);
   border: 2px solid #a65cf0;
   border-radius: min(0.69vw, 10px);
@@ -2335,7 +2345,7 @@ body:has(.catalog) > .header {
      object-fit: cover;
 }
 .card__cardsBlock {
-  margin-bottom: min(9.51vw, 137px);
+  margin-bottom: min(7.36vw, 106px);
   -moz-column-gap: min(2.22vw, 32px);
        column-gap: min(2.22vw, 32px);
 }
@@ -2420,7 +2430,7 @@ body:has(.catalog) > .header {
      object-fit: cover;
 }
 .card__descr {
-  margin-bottom: min(7.29vw, 105px);
+  margin-bottom: min(6.46vw, 93px);
   font-size: min(0.97vw, 14px);
   font-weight: 400;
   line-height: min(1.74vw, 25px);
@@ -2446,11 +2456,12 @@ body:has(.catalog) > .header {
 .card dl {
   display: flex;
   flex-direction: column;
-  row-gap: min(0.83vw, 12px);
+  margin-top: 10px;
+  row-gap: min(0.9vw, 13px);
 }
 .card div:has(> dt) {
   display: flex;
-  width: min(37.78vw, 544px);
+  width: min(43.19vw, 622px);
 }
 .card dt {
   display: flex;

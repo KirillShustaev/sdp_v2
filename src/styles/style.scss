@@ -9,7 +9,11 @@
 }
 
 body:has(.catalog) > .header {
-  margin-bottom: min(1.60vw, 23px);
+  margin-bottom: min(1.39vw, 20px);
+}
+
+body:has(.card) > .header {
+  margin-bottom: min(1.39vw, 20px);
 }
 
 .header {
@@ -89,7 +93,7 @@ body:has(.catalog) > .header {
     align-items: center;
     justify-content: space-between;
     width: min(73.68vw, 1061px);
-    padding: min(1.39vw, 20px) min(2.22vw, 32px);
+    padding: min(.90vw, 13px) min(2.22vw, 32px);
     border-radius: min(.69vw, 10px);
     background-color: #f6f6f6;
     transition: background-color .3s ease-in-out;
@@ -347,7 +351,7 @@ body:has(.catalog) > .header {
 
   &__priceBlock {
     align-items: center;
-    margin-bottom: min(1.53vw, 22px);
+    margin-bottom: min(1.11vw, 16px);
 
     column-gap: min(2.08vw, 30px);
   }
@@ -380,11 +384,11 @@ body:has(.catalog) > .header {
   &__list {
     grid-template-columns: repeat(4, 1fr);
     column-gap: min(2.22vw, 32px);
-    row-gap: min(2.22vw, 32px);
+    row-gap: min(2.57vw, 37px);
   }
 
   &__item {
-    min-height: min(29.17vw, 420px);
+    min-height: min(28.75vw, 414px);
     border-radius: min(.69vw, 10px);
     background-color: #f6f6f6;
 
@@ -428,7 +432,7 @@ body:has(.catalog) > .header {
     justify-content: center;
     width: 100%;
     min-height: min(9.03vw, 130px);
-    margin-bottom: min(1.11vw, 16px);
+    margin-bottom: min(1.60vw, 23px);
 
     & img {
       width: 100%;
@@ -449,7 +453,7 @@ body:has(.catalog) > .header {
 
   &__price {
     display: block;
-    margin-bottom: min(1.67vw, 24px);
+    margin-bottom: min(.97vw, 14px);
     font-size: min(1.11vw, 16px);
     font-weight: 400;
     line-height: min(1.46vw, 21px);
@@ -795,7 +799,7 @@ body:has(.catalog) > .header {
 .checkBlock {
   position: relative;
   align-items: center;
-  padding-left: min(1.53vw, 22px);
+  padding-left: min(2.08vw, 30px);
   cursor: pointer;
 
   &__check {
@@ -958,7 +962,7 @@ body:has(.catalog) > .header {
   &__btnSwiperBlock {
     position: absolute;
     bottom: max(-4.44vw, -64px);
-    left: min(32.50vw, 468px);
+    left: min(30.90vw, 445px);
 
     column-gap: min(1.25vw, 18px);
   }
@@ -1005,7 +1009,7 @@ body:has(.catalog) > .header {
   }
 
   &__filterTitleCheck {
-    margin-bottom: min(.56vw, 8px);
+    margin-bottom: min(.76vw, 11px);
     font-size: min(1.11vw, 16px);
     font-weight: 600;
     line-height: min(1.39vw, 20px);
@@ -1017,7 +1021,7 @@ body:has(.catalog) > .header {
     align-items: flex-start;
     flex-direction: column;
 
-    row-gap: min(.69vw, 10px);
+    row-gap: min(.97vw, 14px);
   }
 
   &__checkBlock {
@@ -1146,14 +1150,14 @@ body:has(.catalog) > .header {
 
   &__list {
     grid-template-columns: repeat(3, 1fr);
-    gap: min(2.22vw, 32px);
+    gap: min(1.67vw, 24px);
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: min(29.17vw, 420px);
+    min-height: max-content;
     padding: min(2.08vw, 30px) min(1.04vw, 15px);
     border-radius: min(.69vw, 10px);
     background-color: #f6f6f6;
@@ -1191,6 +1195,8 @@ body:has(.catalog) > .header {
   }
 
   &__imgBlockItem {
+    margin: 0 auto;
+
     &_1 {
       width: min(18.47vw, 266px);
       height: min(5.69vw, 82px);
@@ -1265,12 +1271,13 @@ body:has(.catalog) > .header {
   }
 
   & div:has(> .catalog__itemTitle) {
-    margin-left: min(1.04vw, 15px);
+    margin-left: min(1.46vw, 21px);
   }
 
   &__btn {
     max-width: min(4.03vw, 58px);
     margin-top: auto;
+    margin-left: min(1.39vw, 20px);
     padding: min(1.32vw, 19px) min(2.43vw, 35px);
     border: 2px solid #a65cf0;
     border-radius: min(.69vw, 10px);
@@ -1314,7 +1321,7 @@ body:has(.catalog) > .header {
   }
 
   &__cardsBlock {
-    margin-bottom: min(9.51vw, 137px);
+    margin-bottom: min(7.36vw, 106px);
 
     column-gap: min(2.22vw, 32px);
   }
@@ -1410,7 +1417,7 @@ body:has(.catalog) > .header {
   }
 
   &__descr {
-    margin-bottom: min(7.29vw, 105px);
+    margin-bottom: min(6.46vw, 93px);
     font-size: min(.97vw, 14px);
     font-weight: 400;
     line-height: min(1.74vw, 25px);
@@ -1440,13 +1447,14 @@ body:has(.catalog) > .header {
   & dl {
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
 
-    row-gap: min(.83vw, 12px);
+    row-gap: min(.90vw, 13px);
   }
 
   & div:has(> dt) {
     display: flex;
-    width: min(37.78vw, 544px);
+    width: min(43.19vw, 622px);
   }
 
   & dt {
