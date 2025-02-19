@@ -326,12 +326,16 @@ body:has(.card) > .header {
   }
 
   & h3 {
-    max-width: min(15.56vw, 224px);
-    margin-bottom: min(1.53vw, 22px);
-    font-size: min(1.67vw, 24px);
-    font-weight: 400;
-    line-height: min(2.15vw, 31px);
-    color: #333333;
+    & a {
+      display: block;
+      max-width: min(15.56vw, 224px);
+      margin-bottom: min(1.53vw, 22px);
+      font-size: min(1.67vw, 24px);
+      font-weight: 400;
+      line-height: min(2.15vw, 31px);
+      color: #333333;
+      transition: color .3s ease-in-out;
+    }
   }
 
   &__price {
@@ -396,12 +400,16 @@ body:has(.card) > .header {
   }
 
   & h3 {
-    max-width: min(16.39vw, 236px);
-    margin-bottom: min(1.67vw, 24px);
-    font-size: min(1.67vw, 24px);
-    font-weight: 400;
-    line-height: min(2.15vw, 31px);
-    color: #333333;
+    a {
+      display: block;
+      max-width: min(16.39vw, 236px);
+      margin-bottom: min(1.67vw, 24px);
+      font-size: min(1.67vw, 24px);
+      font-weight: 400;
+      line-height: min(2.15vw, 31px);
+      color: #333333;
+      transition: color .3s ease-in-out;
+    }
   }
 
   &__star {
@@ -1251,13 +1259,17 @@ body:has(.card) > .header {
   }
 
   &__itemTitle {
-    max-width: min(16.39vw, 236px);
-    margin-bottom: min(1.67vw, 24px);
-    font-size: min(1.67vw, 24px);
-    font-weight: 400;
-    line-height: min(2.15vw, 31px);
-    color: #333333;
-    letter-spacing: 0;
+    a {
+      display: block;
+      max-width: min(16.39vw, 236px);
+      margin-bottom: min(1.67vw, 24px);
+      font-size: min(1.67vw, 24px);
+      font-weight: 400;
+      line-height: min(2.15vw, 31px);
+      color: #333333;
+      letter-spacing: 0;
+      transition: color .3s ease-in-out;
+    }
   }
 
   &__priceItem {
@@ -1291,6 +1303,17 @@ body:has(.card) > .header {
 }
 
 .card {
+  &__pop {
+    h2 {
+      margin-bottom: min(1.67vw, 24px);
+      font-size: min(1.67vw, 24px);
+      font-weight: 400;
+      line-height: min(2.22vw, 32px);
+      color: #333333;
+      letter-spacing: 0;
+    }
+  }
+
   &__way {
     margin-bottom: min(3.33vw, 48px);
 
@@ -1656,12 +1679,20 @@ body:has(.card) > .header {
   background-color: #a65cf0;
 }
 
+@import "media_1024";
+
 // hover
 
 @media (any-hover:hover) {
   .header__navLinkBottom:hover,
   .header__navLink:hover,
   .footer__listBlockMain li a:hover {
+    color: #a65cf0;
+  }
+
+  .spec h3 a:hover,
+  .pop h3 a:hover,
+  .catalog__itemTitle a:hover {
     color: #a65cf0;
   }
 

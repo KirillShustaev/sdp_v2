@@ -84,7 +84,6 @@ function html4() {
       .pipe(gulp.dest(path.html4.dest));
 }
 
-
 function styles() {
     return gulp.src(path.styles.src)
         .pipe(sourcemaps.init())

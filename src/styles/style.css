@@ -1467,13 +1467,15 @@ body:has(.card) > .header {
   width: 100%;
   height: calc(100% - min(14.58vw, 210px) - min(2.08vw, 30px));
 }
-.spec h3 {
+.spec h3 a {
+  display: block;
   max-width: min(15.56vw, 224px);
   margin-bottom: min(1.53vw, 22px);
   font-size: min(1.67vw, 24px);
   font-weight: 400;
   line-height: min(2.15vw, 31px);
   color: #333333;
+  transition: color 0.3s ease-in-out;
 }
 .spec__price {
   font-size: min(1.25vw, 18px);
@@ -1529,13 +1531,15 @@ body:has(.card) > .header {
   background-color: #f6f6f6;
   padding-block: min(2.08vw, 30px);
 }
-.pop h3 {
+.pop h3 a {
+  display: block;
   max-width: min(16.39vw, 236px);
   margin-bottom: min(1.67vw, 24px);
   font-size: min(1.67vw, 24px);
   font-weight: 400;
   line-height: min(2.15vw, 31px);
   color: #333333;
+  transition: color 0.3s ease-in-out;
 }
 .pop__star {
   position: relative;
@@ -2284,7 +2288,8 @@ body:has(.card) > .header {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.catalog__itemTitle {
+.catalog__itemTitle a {
+  display: block;
   max-width: min(16.39vw, 236px);
   margin-bottom: min(1.67vw, 24px);
   font-size: min(1.67vw, 24px);
@@ -2292,6 +2297,7 @@ body:has(.card) > .header {
   line-height: min(2.15vw, 31px);
   color: #333333;
   letter-spacing: 0;
+  transition: color 0.3s ease-in-out;
 }
 .catalog__priceItem {
   display: block;
@@ -2320,6 +2326,14 @@ body:has(.card) > .header {
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
+.card__pop h2 {
+  margin-bottom: min(1.67vw, 24px);
+  font-size: min(1.67vw, 24px);
+  font-weight: 400;
+  line-height: min(2.22vw, 32px);
+  color: #333333;
+  letter-spacing: 0;
+}
 .card__way {
   margin-bottom: min(3.33vw, 48px);
 }
@@ -2630,10 +2644,40 @@ body:has(.card) > .header {
   background-color: #a65cf0;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    padding-inline: min(2.34vw, 24px);
+  }
+  .header__containerTop {
+    flex-direction: column;
+    padding-inline: 0;
+  }
+  .header__list {
+    background-color: #f6f6f6;
+    padding-inline: min(2.34vw, 24px);
+    padding-block: min(1.66vw, 17px);
+  }
+  .header__topMain {
+    background-color: #ffffff;
+    padding-block: 0;
+  }
+  .header__tel {
+    left: min(2.34vw, 24px);
+    width: -moz-max-content;
+    width: max-content;
+    background-color: #ffffff;
+    padding-block: min(1.66vw, 17px);
+  }
+}
 @media (any-hover: hover) {
   .header__navLinkBottom:hover,
   .header__navLink:hover,
   .footer__listBlockMain li a:hover {
+    color: #a65cf0;
+  }
+  .spec h3 a:hover,
+  .pop h3 a:hover,
+  .catalog__itemTitle a:hover {
     color: #a65cf0;
   }
   .hero button:hover,

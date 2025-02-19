@@ -1,0 +1,33 @@
+@media (max-width: 1024px) {
+  .container {
+    padding-inline: min(2.34vw, 24px);
+  }
+
+  .header__containerTop {
+    flex-direction: column;
+
+    padding-inline: 0;
+    // row-gap: min(1.66vw, 17px);
+  }
+
+  .header__list {
+    background-color: #f6f6f6;
+
+    padding-inline: min(2.34vw, 24px);
+    padding-block: min(1.66vw, 17px);
+  }
+
+  .header__topMain {
+    background-color: #ffffff;
+
+    padding-block: 0;
+  }
+
+  .header__tel {
+    left: min(2.34vw,24px);
+    width: max-content;
+    background-color: #ffffff;
+
+    padding-block: min(1.66vw, 17px);
+  }
+}
