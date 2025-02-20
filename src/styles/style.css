@@ -2665,8 +2665,209 @@ body:has(.card) > .header {
     left: min(2.34vw, 24px);
     width: -moz-max-content;
     width: max-content;
+    padding-left: min(1.86vw, 19px);
+    font-size: min(1.37vw, 14px);
+    line-height: min(1.37vw, 14px);
     background-color: #ffffff;
     padding-block: min(1.66vw, 17px);
+  }
+  .header__tel::after {
+    width: min(1.56vw, 16px);
+    height: min(1.56vw, 16px);
+  }
+  .header__navLink {
+    font-size: min(1.37vw, 14px);
+    line-height: min(1.37vw, 14px);
+  }
+  .header__containerBottom div:has(nav) {
+    padding-block: min(3.13vw, 32px);
+  }
+  .header__logo {
+    width: min(18.26vw, 187px);
+    height: min(2.64vw, 27px);
+  }
+  .header__navLinkBottom {
+    font-size: min(1.56vw, 16px);
+    line-height: min(2.15vw, 22px);
+  }
+  .header__bottomList {
+    -moz-column-gap: min(4vw, 41px);
+         column-gap: min(4vw, 41px);
+  }
+  .header__form {
+    width: min(71.58vw, 733px);
+    padding: min(1.95vw, 20px) min(3.13vw, 32px);
+  }
+  .header__search {
+    padding-left: min(2.44vw, 25px);
+    font-size: min(1.56vw, 16px);
+    line-height: min(1.86vw, 19px);
+  }
+  .header__search::-moz-placeholder {
+    font-size: min(1.56vw, 16px);
+    line-height: min(1.86vw, 19px);
+  }
+  .header__search::placeholder {
+    font-size: min(1.56vw, 16px);
+    line-height: min(1.86vw, 19px);
+  }
+  .header__form::before {
+    left: min(3.13vw, 32px);
+    width: min(1.95vw, 20px);
+    height: min(1.95vw, 20px);
+  }
+  .header__btnSearch {
+    width: min(3.13vw, 32px);
+    height: min(3.13vw, 32px);
+  }
+  .header__btn {
+    width: min(2.54vw, 26px);
+    height: min(2.73vw, 28px);
+  }
+  .header__btn:last-child {
+    width: min(2.93vw, 30px);
+  }
+  .header {
+    margin-bottom: min(3.13vw, 32px);
+  }
+  .hero {
+    min-height: min(39.06vw, 400px);
+    margin-bottom: min(6.84vw, 70px);
+    background-image: url(../img//hero_1024.jpg);
+  }
+  .hero h1 {
+    max-width: min(53.61vw, 549px);
+    margin-bottom: min(4.79vw, 49px);
+    font-size: min(4.69vw, 48px);
+    line-height: min(6.35vw, 65px);
+  }
+  .hero button {
+    max-width: min(18.26vw, 187px);
+    padding: min(2.15vw, 22px) min(4.88vw, 50px);
+    font-size: min(1.56vw, 16px);
+    line-height: min(1.56vw, 16px);
+  }
+  .header__basketCount {
+    left: max(-1.07vw, -11px);
+    width: min(1.46vw, 15px);
+    height: min(1.46vw, 15px);
+    font-size: min(0.98vw, 10px);
+    line-height: min(0.98vw, 10px);
+  }
+  .spec h2,
+  .pop__title {
+    margin-bottom: min(2.54vw, 26px);
+    font-size: min(3.13vw, 32px);
+    line-height: min(3.13vw, 32px);
+  }
+  .spec__item_small,
+  .spec__item_big {
+    width: min(28.91vw, 296px);
+  }
+  .spec__imgBlock_1 {
+    width: min(18.85vw, 193px);
+    height: min(20.51vw, 210px);
+    margin-top: min(7.03vw, 72px);
+    margin-bottom: min(1.56vw, 16px);
+  }
+  .spec__imgBlock_2 {
+    width: min(24.8vw, 254px);
+    height: min(13.48vw, 138px);
+    margin-top: min(10.94vw, 112px);
+    margin-bottom: min(4.69vw, 48px);
+  }
+  .spec__imgBlock_3 {
+    width: min(14.55vw, 149px);
+    height: min(21.29vw, 218px);
+    margin-top: min(6.25vw, 64px);
+    margin-bottom: min(1.56vw, 16px);
+  }
+  .spec__item {
+    padding: 0 min(2.93vw, 30px) min(2.93vw, 30px) min(2.93vw, 30px);
+  }
+  .spec__discount {
+    width: min(8.98vw, 92px);
+    min-height: min(3.32vw, 34px);
+    font-size: min(1.37vw, 14px);
+    line-height: min(1.86vw, 19px);
+  }
+  .spec h3 a {
+    max-width: min(21.97vw, 225px);
+    margin-bottom: min(2.25vw, 23px);
+    font-size: min(2.34vw, 24px);
+    line-height: min(3.03vw, 31px);
+  }
+  .spec__price {
+    font-size: min(1.76vw, 18px);
+    line-height: min(2.25vw, 23px);
+  }
+  .spec__priceBlock {
+    margin-bottom: min(2.93vw, 30px);
+    -moz-column-gap: min(2.93vw, 30px);
+         column-gap: min(2.93vw, 30px);
+  }
+  .spec__priceLine {
+    font-size: min(1.56vw, 16px);
+    line-height: min(2.05vw, 21px);
+  }
+  .spec__btn {
+    padding: min(1.86vw, 19px) min(3.52vw, 36px);
+    border-radius: min(0.98vw, 10px);
+    font-size: min(1.56vw, 16px);
+    line-height: min(1.56vw, 16px);
+  }
+  .spec, .pop {
+    margin-bottom: min(6.84vw, 70px);
+  }
+  .pop__item {
+    border-radius: min(0.98vw, 10px);
+    padding-block: min(2.93vw, 30px);
+  }
+  .pop__item:nth-last-child(1), .pop__item:nth-last-child(2) {
+    display: none;
+  }
+  .pop__star {
+    margin-bottom: min(1.46vw, 15px);
+    margin-left: min(2.93vw, 30px);
+    padding-left: min(2.25vw, 23px);
+    font-size: min(1.56vw, 16px);
+    line-height: min(2.05vw, 21px);
+  }
+  .pop__star::after {
+    top: min(0.29vw, 3px);
+    width: min(1.46vw, 15px);
+    height: min(1.46vw, 15px);
+  }
+  .pop div:has(> picture) {
+    width: 90%;
+    min-height: min(12.21vw, 125px);
+    margin: 0 auto;
+    margin-bottom: min(1.76vw, 18px);
+  }
+  .pop h3 a {
+    max-width: min(23.05vw, 236px);
+    margin-bottom: min(2.34vw, 24px);
+    font-size: min(2.34vw, 24px);
+    line-height: min(3.13vw, 32px);
+  }
+  .pop div:has(> h3) {
+    height: min(17.87vw, 183px);
+    padding-inline: min(2.93vw, 30px);
+  }
+  .pop__list {
+    gap: min(3.13vw, 32px);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .pop__price {
+    margin-bottom: min(2.34vw, 24px);
+    font-size: min(1.56vw, 16px);
+    line-height: min(2.05vw, 21px);
+  }
+  .pop__btn {
+    padding: min(1.86vw, 19px) min(3.42vw, 35px);
+    border-radius: min(0.98vw, 10px);
+    font-size: min(1.56vw, 16px);
+    line-height: min(1.56vw, 16px);
   }
 }
 @media (any-hover: hover) {
