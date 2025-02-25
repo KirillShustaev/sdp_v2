@@ -1,6 +1,6 @@
 @media (max-width: 1024px) {
   .container {
-    padding-inline: min(2.34vw, 24px);
+    padding-inline: min(3.52vw, 36px);
   }
 
   .header__containerTop {
@@ -13,8 +13,9 @@
   .header__list {
     background-color: #f6f6f6;
 
-    padding-inline: min(2.34vw, 24px);
+    padding-inline: min(3.52vw, 36px);
     padding-block: min(1.66vw, 17px);
+    column-gap: min(6.35vw, 65px);
   }
 
   .header__topMain {
@@ -24,14 +25,14 @@
   }
 
   .header__tel {
-    left: min(2.34vw,24px);
+    left: min(3.81vw, 39px);
     width: max-content;
     padding-left: min(1.86vw, 19px);
     font-size: min(1.37vw, 14px);
     line-height: min(1.37vw, 14px);
     background-color: #ffffff;
 
-    padding-block: min(1.66vw, 17px);
+    padding-block: min(2.15vw, 22px);
   }
 
   .header__tel::after {
@@ -45,7 +46,8 @@
   }
 
   .header__containerBottom div:has(nav) {
-    padding-block: min(3.13vw, 32px);
+    padding-top: min(3.13vw, 32px);
+    padding-bottom: min(2.73vw, 28px);
   }
 
   .header__logo {
@@ -99,7 +101,7 @@
   }
 
   .header {
-    margin-bottom: min(3.13vw, 32px);
+    margin-bottom: min(2.34vw, 24px);
   }
 
   .hero {
@@ -110,7 +112,7 @@
 
   .hero h1 {
     max-width: min(53.61vw, 549px);
-    margin-bottom: min(4.79vw, 49px);
+    margin-bottom: min(1.86vw, 19px);
     font-size: min(4.69vw, 48px);
     line-height: min(6.35vw, 65px);
   }
@@ -131,7 +133,8 @@
   }
 
   .spec h2,
-  .pop__title {
+  .pop__title,
+  .top h2 {
     margin-bottom: min(2.54vw, 26px);
     font-size: min(3.13vw, 32px);
     line-height: min(3.13vw, 32px);
@@ -168,6 +171,7 @@
   }
 
   .spec__discount {
+    top: min(2.93vw, 30px);
     width: min(8.98vw, 92px);
     min-height: min(3.32vw, 34px);
     font-size: min(1.37vw, 14px);
@@ -187,7 +191,7 @@
   }
 
   .spec__priceBlock {
-    margin-bottom: min(2.93vw, 30px);
+    margin-bottom: min(1.95vw, 20px);
 
     column-gap: min(2.93vw, 30px);
   }
@@ -204,7 +208,9 @@
     line-height: min(1.56vw, 16px);
   }
 
-  .spec, .pop {
+  .spec,
+  .pop,
+  .oxford {
     margin-bottom: min(6.84vw, 70px);
   }
 
@@ -235,14 +241,14 @@
 
   .pop div:has(> picture) {
     width: 90%;
-    min-height: min(12.21vw, 125px);
+    min-height: min(13.38vw, 137px);
     margin: 0 auto;
     margin-bottom: min(1.76vw, 18px);
   }
 
   .pop h3 a {
     max-width: min(23.05vw, 236px);
-    margin-bottom: min(2.34vw, 24px);
+    margin-bottom: min(1.76vw, 18px);
     font-size: min(2.34vw, 24px);
     line-height: min(3.13vw, 32px);
   }
@@ -269,5 +275,129 @@
     border-radius: min(.98vw, 10px);
     font-size: min(1.56vw, 16px);
     line-height: min(1.56vw, 16px);
+  }
+
+  .oxford {
+    min-height: min(58.59vw, 600px);
+    padding-top: min(14.65vw, 150px);
+    background-image: url(../img/oxford_back_1024.jpg);
+  }
+
+  .oxford h4 {
+    max-width: min(49.61vw, 508px);
+    margin-bottom: min(4.79vw, 49px);
+    font-size: min(4.69vw, 48px);
+    line-height: min(5.66vw, 58px);
+  }
+
+  .oxford h4 div {
+    font-size: min(5.86vw, 60px);
+    line-height: min(7.03vw, 72px);
+  }
+
+  .oxford button {
+    width: min(18.26vw, 187px);
+    min-height: min(5.86vw, 60px);
+    font-size: min(1.56vw, 16px);
+    line-height: min(1.56vw, 16px);
+  }
+
+  .top__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min(49.90vw, 511px) min(49.90vw, 511px);
+    gap: min(3.13vw, 32px);
+  }
+
+  .top__item_1 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+
+  .top__item_2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  .top__item_3 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+
+  .top__item_4 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .top__item_5 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+
+  .top__item_1 div:has(> picture) {
+    width: min(50.29vw, 515px);
+    height: min(30.08vw, 308px);
+    // transform: translateX(min(18.16vw, 186px)) translateY(min(3.32vw, 34px));
+  }
+
+  .top__item_3 div:has(> picture) {
+    width: min(43.75vw, 448px);
+    height: min(28.91vw, 296px);
+  }
+
+  .top__item_4 div:has(> picture) {
+    width: min(24.61vw, 252px);
+    height: min(28.91vw, 296px);
+  }
+
+  .top__item_2 div:has(> picture) {
+    width: min(48.54vw, 497px);
+    height: min(28.91vw, 296px);
+  }
+
+  .top__item_5 div:has(> picture) {
+    width: min(36.91vw, 378px);
+    height: min(28.91vw, 296px);
+  }
+
+  .top__item {
+    padding: min(2.93vw, 30px);
+    border-radius: min(.98vw, 10px);
+  }
+
+  .top__typeItem {
+    font-size: min(1.37vw, 14px);
+    line-height: min(1.37vw, 14px);
+  }
+
+  .top__listType {
+    margin-bottom: min(1.37vw, 14px);
+
+    column-gap: min(2.93vw, 30px);
+  }
+
+  .top h3 {
+    margin-bottom: min(2.93vw, 30px);
+    font-size: min(2.34vw, 24px);
+    line-height: min(3.22vw, 33px);
+  }
+
+  .top div:has(> picture) {
+    margin-bottom: min(2.93vw, 30px);
+    margin-left: max(-2.93vw, -30px);
+  }
+
+  .top__linkCatalog {
+    font-size: min(1.56vw, 16px);
+    line-height: min(1.95vw, 20px);
+  }
+
+  .top__arrow {
+    width: min(2.15vw, 22px);
+    height: min(2.15vw, 22px);
+  }
+
+  .top__item_3 div:has(> picture) {
+    width: 125%;
+    height: min(29.98vw, 307px);
   }
 }
