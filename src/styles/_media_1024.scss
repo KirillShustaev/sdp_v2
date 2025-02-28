@@ -135,7 +135,8 @@
   .spec h2,
   .pop__title,
   .top h2,
-  .useful h2 {
+  .useful h2,
+  .connect h2 {
     margin-bottom: min(2.54vw, 26px);
     font-size: min(3.13vw, 32px);
     line-height: min(3.13vw, 32px);
@@ -212,7 +213,9 @@
   .spec,
   .pop,
   .oxford,
-  .top {
+  .top,
+  .useful,
+  .connect {
     margin-bottom: min(6.84vw, 70px);
   }
 
@@ -438,5 +441,101 @@
     border-radius: min(.98vw, 10px);
     font-size: min(1.56vw, 16px);
     line-height: min(1.56vw, 16px);
+  }
+
+  .connect h2 {
+    margin-bottom: min(.88vw, 9px);
+  }
+
+  .connect__descr {
+    max-width: min(39.55vw, 405px);
+    margin-bottom: min(1.76vw, 18px);
+    font-size: min(1.37vw, 14px);
+    line-height: min(1.86vw, 19px);
+  }
+
+  .connect__blockMain {
+    &_form {
+      width: min(39.55vw, 405px);
+    }
+
+    &_img {
+      flex-grow: 1;
+    }
+  }
+
+  .connect div:has(> input[type]) > input,
+  .connect div:has(> input[type]) > input::placeholder {
+    font-size: min(1.56vw, 16px);
+    line-height: min(3.91vw, 40px);
+  }
+
+  .connect div:has(> input[type]) > input {
+    padding: min(.68vw, 7px) min(1.76vw, 18px);
+  }
+
+  .connect div:has(> input[type]) {
+    margin-bottom: min(2.93vw, 30px);
+
+    row-gap: min(2.93vw, 30px);
+  }
+
+  .connect__btn {
+    margin-bottom: min(1.17vw, 12px);
+    padding: min(1.86vw, 19px) min(3.42vw, 35px);
+    font-size: min(1.56vw, 16px);
+    line-height: min(1.56vw, 16px);
+  }
+
+  .checkBlock__descr {
+    font-size: min(1.37vw, 14px);
+    line-height: min(1.86vw, 19px);
+  }
+
+  .checkBlock__checkVis,
+  .checkBlock__checkVis::after {
+    width: min(1.37vw, 14px);
+    height: min(1.37vw, 14px);
+    border-radius: 2px;
+  }
+
+  .footer__logo {
+    width: min(18.26vw, 187px);
+    height: min(2.64vw, 27px);
+    margin-bottom: min(3.03vw, 31px);
+  }
+
+  .footer__container {
+    padding-block: min(2.15vw, 22px);
+  }
+
+  .footer__listBlockMain h4 {
+    margin-bottom: min(.98vw, 10px);
+    font-size: min(1.56vw, 16px);
+    line-height: min(1.56vw, 16px);
+  }
+
+  .footer__listBlockMain li a {
+    font-size: min(1.37vw, 14px);
+    line-height: min(1.37vw, 14px);
+  }
+
+  .footer__socBlock svg {
+    width: min(2.93vw, 30px);
+    height: min(2.93vw, 30px);
+  }
+
+  .footer__mainBlock {
+    column-gap: min(9.18vw, 94px);
+  }
+
+  .footer__socBlock {
+    column-gap: min(1.95vw, 20px);
+  }
+
+  .footer__bottom {
+    padding-block: min(0.59vw, 6px);
+    font-size: min(1.37vw, 14px);
+    line-height: min(1.86vw, 19px);
   }
 }
